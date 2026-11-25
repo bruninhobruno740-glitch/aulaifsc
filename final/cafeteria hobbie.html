@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafeteria Hobbie</title>
+    <link rel="icon" type="image/png" href="h">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5e6d3;
+            color: #4e342e;
+        }
+
+        .galeria {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit,
+                    minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        header {
+            background-color: #4e342e;
+            color: white;
+        }
+
+        .inicio {
+            text-align: center;
+        }
+
+        .inicio ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        h2 {
+            color: #795548;
+        }
+
+        .botao {
+            background-color: #795548;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .videos {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+
+        .videos video,
+        .videos iframe {
+            width: 420px;
+            height: 236px;
+            max-width: 100%;
+        }
+
+
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            border: 1px solid #bbb;
+            padding: .6rem;
+            text-align: left;
+        }
+
+        thead {
+            background: #eaf2f8;
+        }
+
+        caption {
+            font-weight: bold;
+            margin-bottom: .5rem;
+        }
+
+        body {
+            background-image: url("fundofundo.jpeg");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+
+        }
+
+h1 {}
+        button {
+            background: lightgray;
+        }
+
+        .btn-principal {
+            background: blue;
+        }
+
+
+        #btn-enviar {
+            background: green;
+        }
+
+        img {
+            width: 250px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .menu {
+            flex-direction: column;
+        }
+
+        @media (min-width: 768px) {
+            .menu {
+                flex-direction: row;
+            }
+
+            /* base = celular */
+            .menu {
+                flex-direction: column;
+            }
+
+            @media (min-width: 768px) {
+                .menu {
+                    flex-direction: row;
+                }
+            }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1> Minha Cafeteria</h1>
+        <p>O melhor café do bairro!</p>
+    </header>
+
+
+    <form action="/inscricao" method="post">
+        <h2>Serviços</h2>
+
+        <label for="nome">Busque:</label>
+        <input id="nome" name="nome" type="text"><button>Procurar no cardapio</button> <br>
+        <label for="agendamento">Agendar evento:</label>
+        <input type="date" id="agendamento"></br>
+
+        </select> <br>
+        <h2>Seus dados:</h2>
+        <label for="email">E-mail</label>
+        <input id="email" name="email" type="email" required>
+        <label for="idade">Idade</label>
+        <input id="idade" name="idade" type="number" min="16" max="100">
+        <button type="submit">Enviar</button>
+    </form>
+
+    </form>
+    <div class="inicio">
+        <section>
+            <h2>Bem-vindo!</h2>
+            <p>Venha aproveitar cafés deliciosos em um ambiente aconchegante.</p>
+        </section>
+
+        <section class="galeria">
+            <h2>Nosso Cardápio</h2>
+            <ul>
+                <li>Café Expresso - R$ 6,00</li>
+                <li>Cappuccino - R$ 17,00</li>
+                <li>Bolo de Chocolate - R$ 15,00/kg</li>
+                <li>Pão de Queijo - R$ 5,00</li>
+            </ul>
+            <img src="s.jpg">
+            <section class="food">Cappuccino</section>
+            <img src="ss.jpg">
+            <section class="food">Cookie</section>
+            <img src="Croissant-Petr_Kratochvil.jpg">
+            <section class="food">Croassaint</section>
+            <img src="c.jpg">
+            <section class="food">bolo chocolate</section>
+            <img src="asdsa.jpg">
+            <section class="food">sanduiche natural</section>
+            <img src="images.jpg">
+            <section class="food">torta</section>
+
+            <br>
+        </section>
+    </div>
+    <table>
+        <caption>Horários de atendimento</caption>
+        <thead>
+            <tr>
+                <th scope="col">Dia</th>
+                <th scope="col">Horário</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Segunda</th>
+                <td>6:00 - 19:00</td>
+            </tr>
+            <tr>
+                <th scope="row">Terça</th>
+                <td>6:00 - 19:00</td>
+            </tr>
+            <tr>
+                <th scope="row">quarta</th>
+                <td>6:00 - 19:00</td>
+            </tr>
+            <tr>
+                <th scope="row">quinta</th>
+                <td>6:00 - 19:00</td>
+            </tr>
+            <tr>
+                <th scope="row">sexta</th>
+                <td>6:00 - 19:00</td>
+            </tr>
+            <tr>
+                <th scope="row">sabado</th>
+                <td>8:00 - 19:00</td>
+            </tr>
+            <tr>
+                <th scope="row">domingo</th>
+                <td>8:00 - 19:00</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <div class="videos">
+        <video controls width="420" height="236" poster="imagens/cafe2.jpg">
+            <source src="videos/cafevid.mp4" type="video/mp4">
+            grao de cafe
+        </video>
+        <iframe width="420" height="236" src="https://www.youtube.com/embed/4sCG1vkFk28?si=qJLTLm8JAcDBIL75"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+    </div>
+
+    <div>
+        <h2>Promoções</h2>
+        <p>Pão trigo R$0,40/un</p>
+        <p>Pão doce R$1,02/un</p>
+        <section>
+            <p>Rosca polvilho R$5,00</p>
+        </section>
+        <header>busca</header>
+        <nav>acessibilidade</nav>
+        <main>main</main>
+        <aside>manutenção</aside>
+        <footer>footer</footer>
+    </div>
+    <section>
+        <h2>Contato</h2>
+        <span>Endereço:</span> Padaria perto de uma goiabeira
+        <p>Horário: Abrimos na hora que eu acordar<br>
+            Fechamos quando eu ficar com sono
+        </p>
+        <label for="Funcionarios">Funcionarios</label>
+        <select id="Funcionarios" name="Funcionarios">
+            <option value="Sr Preguiça">Sr Preguiça</option>
+            <option value="Invisivel">Invisivel</option>
+            <option value="Dr Atestado">Dr Atestado</option>
+        </select>
+        <a href="file:///c%3A/Users/ALUNO/Documents/Siqueira/My%20first%20site/desafio%201/Contatos.html">
+            <h3>Fale conosco</h3>
+        </a>
+
+    </section>
+
+    <audio id="Numb-Tongo" controls>
+        <source src="Numb-Tongo (estreno a nivel mundial 2017) Parodia.mp3" type="audio/mpeg">
+        Rock paulera
+    </audio>
+
+    </main>
+
+    <footer style="background-color: burlywood;">
+        <p>Aproveite nosso site</p>
+
+        <button
+            onclick="window.open('file:///c%3A/Users/ALUNO/Documents/Siqueira/My%20first%20site/desafio%201/GERENTE.HTML', '_blank')">
+            chamar o gerente
+        </button>
+
+        <button id="btn-submit-final"
+            onclick="window.open('file:///c%3A/Users/ALUNO/Documents/Siqueira/My%20first%20site/desafio%201/dar%20gorjeta.html', '_blank')">
+            dar gorjeta
+        </button>
+
+        <button class="btn-principal"
+            onclick="window.open('file:///c%3A/Users/ALUNO/Documents/Siqueira/My%20first%20site/desafio%201/critica.html', '_blank')">
+            criticar o garçom
+        </button>
+
+        <button style="background-color: yellow;" onclick="window.open('https://statusinvest.com.br/acoes')">
+            Ações da padaria
+        </button>
+    </footer>
+</body>
+
+</html>
